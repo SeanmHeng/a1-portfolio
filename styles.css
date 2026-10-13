@@ -570,3 +570,10 @@ textarea { min-height: 200px; resize: vertical; }
   .field-row { grid-template-columns: 1fr; }
 }
 
+
+/* Spacing modifiers (replace former inline styles) ------------ */
+.section--tight { padding-top: 32px; }
+
+.btn-row--tight { margin-top: 28px; }
+
+.table-scroll--flush { margin-top: 0; }
