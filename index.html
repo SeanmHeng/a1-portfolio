@@ -10,9 +10,10 @@ EMAIL: smheng@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Sean Heng">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <meta name="description" content="">
+  <title>Sean Heng | Portfolio</title>
+  <meta name="description" content="Portfolio of Sean Heng, a UC Irvine computer science student building event-driven backends, data pipelines and full-stack tools.">
 
+  <!-- Google Fonts (Instrument Serif, DM Sans, JetBrains Mono) + Google Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
@@ -21,93 +22,96 @@ EMAIL: smheng@uci.edu
   <link rel="stylesheet" href="02-home.css">
 </head>
 <body>
-  <a class="skip-link" href="#main"></a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap nav-wrap">
-      <a class="brand" href="index.html"></a>
+      <a class="brand" href="index.html">Sean Heng</a>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
       <label for="nav-toggle" class="nav-btn"><span class="material-symbols-outlined" aria-hidden="true">menu</span></label>
 
-      <nav class="site-nav" aria-label="">
+      <nav class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html" aria-current="page"></a></li>
-          <li><a href="projects.html"></a></li>
-          <li><a href="resume.html"></a></li>
-          <li><a href="contact.html"></a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
+    <!-- HERO: the photo is the first screen; it fades into the page as you scroll -->
     <section class="hero" aria-labelledby="hero-title">
       <img class="hero-photo" src="images/photo.jpg" width="1600" height="1067"
-           alt="">
+           alt="Sean Heng seated on a lawn at night, glancing over his shoulder, beneath a tree hung with glowing paper lanterns.">
 
       <div class="hero-grid grid12">
         <a class="scroll-cue" href="#work">Scroll <span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></a>
 
         <div class="hero-copy">
-          <span class="label"></span>
-          <h1 id="hero-title"><em></em></h1>
-          <p class="hero-lead"></p>
+          <span class="label">Portfolio · Autumn 2026</span>
+          <h1 id="hero-title">Sean <em>Heng</em></h1>
+          <p class="hero-lead">Computer science student at UC Irvine building event-driven backends, data pipelines and full-stack tools for real communities. Open to internships and software roles.</p>
           <div class="btn-row" style="margin-top:28px">
-            <a class="btn" href="projects.html"></a>
+            <a class="btn" href="projects.html">See my projects</a>
             <a class="arrow-link" href="resume.html">View résumé <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FEATURED WORK: the two websites -->
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <div class="grid12 work-head">
-          <span class="label"></span>
-          <h2 id="work-title"><em></em></h2>
+          <span class="label">Selected work</span>
+          <h2 id="work-title">Two websites I <em>work on</em></h2>
         </div>
 
         <article class="work-item">
           <div class="work-shot">
-            <img class="shot-img" src="images/socalfurs.jpg" width="1600" height="735" loading="lazy" alt="">
+            <img class="shot-img" src="images/socalfurs.jpg" width="1600" height="735" loading="lazy" alt="Screenshot of the SoCalFurs home page: a crowd of fursuiters waving at the camera behind a welcome message and buttons for the calendar and groups.">
           </div>
           <div class="work-copy">
-            <span class="label"></span>
-            <h3></h3>
-            <p></p>
+            <span class="label">01 — Production · 3,000+ daily users</span>
+            <h3>SoCalFurs</h3>
+            <p>A calendar automation platform for the Southern California furry community. As a full stack developer on a team, I work on the Telegram, AI and PostgreSQL pipeline that publishes events automatically.</p>
             <a class="arrow-link" href="projects.html#website-one">Read the case study <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
           </div>
         </article>
 
         <article class="work-item">
           <div class="work-shot">
-            <img class="shot-img" src="images/localfurry.jpg" width="1600" height="823" loading="lazy" alt="">
+            <img class="shot-img" src="images/localfurry.jpg" width="1600" height="823" loading="lazy" alt="Screenshot of the LocalFurry home page: a blue wolf character holding a flag beside the headline “Meet your local furry community” and a list of city calendars.">
           </div>
           <div class="work-copy">
-            <span class="label"></span>
-            <h3></h3>
-            <p></p>
+            <span class="label">02 — In development</span>
+            <h3>LocalFurry</h3>
+            <p>An event calendar that gathers public furry listings into one calendar per city. Working under the lead developer, I’m building its Python Telegram adapter and managing the autonomous agents and dedup logic behind each city.</p>
             <a class="arrow-link" href="projects.html#website-two">Read the case study <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" aria-labelledby="about-title">
       <div class="wrap grid12">
-        <aside class="about-facts" aria-label="">
-          <span class="label" id="about-title"></span>
+        <aside class="about-facts" aria-label="Details">
+          <span class="label" id="about-title">About me</span>
           <dl>
-            <div><dt></dt><dd></dd></div>
-            <div><dt></dt><dd></dd></div>
-            <div><dt></dt><dd></dd></div>
+            <div><dt>Based in</dt><dd>California</dd></div>
+            <div><dt>Studying</dt><dd>B.S. Computer Science, UC Irvine ’28</dd></div>
+            <div><dt>Outside of code</dt><dd>Fashion and the gym</dd></div>
           </dl>
         </aside>
         <div class="about-body">
-          <p class="lede"></p>
-          <p></p>
-          <p></p>
+          <p class="lede">I like building software for communities.</p>
+          <p>I’m happiest working on tools that people actually use every day: calendars, pipelines and bots that quietly keep a community connected and informed. At SoCalFurs I’m a full stack developer on a team, and at LocalFurry I work under the lead developer on the Telegram adapter, city agents and dedup logic.</p>
+          <p>Away from the keyboard, my other interests are fashion and the gym. I like paying attention to the details, in what I wear and in what I ship.</p>
           <div class="btn-row" style="margin-top:28px">
             <a class="arrow-link" href="resume.html">Read the full résumé <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
           </div>
@@ -115,11 +119,12 @@ EMAIL: smheng@uci.edu
       </div>
     </section>
 
+    <!-- CALL TO ACTION -->
     <section class="cta" aria-labelledby="cta-title">
       <div class="wrap grid12">
-        <h2 id="cta-title"><em></em></h2>
+        <h2 id="cta-title">Let’s <em>talk.</em></h2>
         <div class="cta-side">
-          <p></p>
+          <p>Have an internship, a project or an idea in mind? Send me a message and I’ll reply soon.</p>
           <a class="btn" href="contact.html"><span class="material-symbols-outlined" aria-hidden="true">mail</span>Get in touch</a>
         </div>
       </div>
@@ -129,26 +134,26 @@ EMAIL: smheng@uci.edu
   <footer class="site-footer">
     <div class="wrap">
       <div class="grid12">
-        <p class="footer-name"></p>
-        <nav class="footer-col" aria-label="">
-          <h2></h2>
+        <p class="footer-name">Sean Heng</p>
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Pages</h2>
           <ul>
-            <li><a href="index.html"></a></li>
-            <li><a href="projects.html"></a></li>
-            <li><a href="resume.html"></a></li>
-            <li><a href="contact.html"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="footer-col">
-          <h2></h2>
+          <h2>Elsewhere</h2>
           <ul>
-            <li><a href="mailto:hengsean45@gmail.com"></a></li>
+            <li><a href="mailto:hengsean45@gmail.com">hengsean45@gmail.com</a></li>
             <li><a href="https://socalfurs.com" target="_blank" rel="noopener">SoCalFurs <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
             <li><a href="https://localfurry.com" target="_blank" rel="noopener">LocalFurry <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-bottom"></p>
+      <p class="footer-bottom">© 2026 Sean Heng · Built with HTML &amp; CSS</p>
     </div>
   </footer>
 </body>
