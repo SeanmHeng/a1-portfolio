@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <meta name="description" content="">
+  <title>Projects | Sean Heng</title>
+  <meta name="description" content="Case studies of SoCalFurs and LocalFurry, two event-calendar websites Sean Heng works on.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="03-projects.css">
 </head>
 <body>
-  <a class="skip-link" href="#main"></a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap nav-wrap">
-      <a class="brand" href="index.html"></a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="">
+      <a class="brand" href="index.html">Sean Heng</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
       <label for="nav-toggle" class="nav-btn"><span class="material-symbols-outlined" aria-hidden="true">menu</span></label>
-      <nav class="site-nav" aria-label="">
+      <nav class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html"></a></li>
-          <li><a href="projects.html" aria-current="page"></a></li>
-          <li><a href="resume.html"></a></li>
-          <li><a href="contact.html"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -34,33 +34,33 @@
   <main id="main">
     <section class="banner wrap" aria-labelledby="page-title">
       <div class="grid12">
-        <span class="label"></span>
-        <h1 id="page-title"><em></em></h1>
-        <p></p>
+        <span class="label">Projects</span>
+        <h1 id="page-title">The sites <em>I work on</em></h1>
+        <p>Two event-calendar websites for furry communities, what I contribute to each, and how they work.</p>
       </div>
     </section>
 
-    <section class="section" style="padding-top:32px" aria-label="">
+    <section class="section" style="padding-top:32px" aria-label="Project case studies">
       <div class="wrap">
 
         <article class="case" id="website-one">
           <div class="work-shot">
-            <img class="shot-img" src="images/socalfurs.jpg" width="1600" height="735" loading="lazy" alt="">
+            <img class="shot-img" src="images/socalfurs.jpg" width="1600" height="735" loading="lazy" alt="Screenshot of the SoCalFurs home page: a crowd of fursuiters waving at the camera behind a welcome message and buttons for the calendar and groups.">
           </div>
           <div class="case-copy">
-            <span class="label"></span>
-            <h2></h2>
-            <p></p>
+            <span class="label">Project 01</span>
+            <h2>SoCalFurs</h2>
+            <p>The website for the Southern California furry community. Behind it sits a production calendar automation platform used by 3,000+ people daily, which pulls community announcements from Telegram and publishes them as structured events.</p>
             <dl class="spec">
-              <dt></dt><dd></dd>
-              <dt></dt><dd></dd>
-              <dt></dt><dd></dd>
+              <dt>Role</dt><dd>Full stack developer on a team</dd>
+              <dt>Tools</dt><dd>Python, Telethon, Gemini API, PostgreSQL, Google Calendar API, React, TypeScript, Node.js, Drizzle</dd>
+              <dt>Since</dt><dd>March 2026</dd>
             </dl>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Replaced polling-based Telegram checks with an event-driven Telethon workflow, so the platform responds faster and wastes less processing.</li>
+              <li>Built an ETL-style pipeline that uses the Gemini API to turn unstructured announcements into validated JSON, then loads it into PostgreSQL.</li>
+              <li>Sped up duplicate-event detection in Google Calendar by querying only the relevant date range, which also avoids API pagination limits.</li>
+              <li>Built a React, TypeScript and Node interface where organizers create, view and manage events.</li>
             </ul>
             <div class="btn-row">
               <a class="btn" href="https://socalfurs.com" target="_blank" rel="noopener">Visit SoCalFurs <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a>
@@ -70,21 +70,21 @@
 
         <article class="case" id="website-two">
           <div class="work-shot">
-            <img class="shot-img" src="images/localfurry.jpg" width="1600" height="823" loading="lazy" alt="">
+            <img class="shot-img" src="images/localfurry.jpg" width="1600" height="823" loading="lazy" alt="Screenshot of the LocalFurry home page: a blue wolf character holding a flag beside the headline “Meet your local furry community” and a list of city calendars.">
           </div>
           <div class="case-copy">
-            <span class="label"></span>
-            <h2></h2>
-            <p></p>
+            <span class="label">Project 02</span>
+            <h2>LocalFurry</h2>
+            <p>A furry event calendar that gathers public event listings into one calendar per city, so people can find meetups, raves and other events near them.</p>
             <dl class="spec">
-              <dt></dt><dd></dd>
-              <dt></dt><dd></dd>
-              <dt></dt><dd></dd>
+              <dt>Role</dt><dd>Works under the lead developer: Telegram adapter, city agents and dedup logic</dd>
+              <dt>Tools</dt><dd>Python, Telegram, autonomous agents</dd>
+              <dt>Since</dt><dd>September 2026</dd>
             </dl>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Building a Python adapter that connects Telegram to the site’s event calendar.</li>
+              <li>Managing autonomous agents that each look after the listings for one city.</li>
+              <li>Working on the dedup logic that keeps the same event from showing up twice when it is posted in more than one place.</li>
             </ul>
             <div class="btn-row">
               <a class="btn" href="https://localfurry.com" target="_blank" rel="noopener">Visit LocalFurry <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a>
@@ -97,19 +97,19 @@
     <section class="section band" aria-labelledby="glance-title">
       <div class="wrap grid12">
         <div class="services-title">
-          <span class="label"></span>
-          <h2 id="glance-title"><em></em></h2>
+          <span class="label">Compare</span>
+          <h2 id="glance-title">At a <em>glance</em></h2>
         </div>
         <div class="services-list">
           <div class="table-scroll" style="margin-top:0">
             <table>
-              <caption></caption>
+              <caption>Summary of my two featured websites</caption>
               <thead>
-                <tr><th scope="col"></th><th scope="col"></th><th scope="col"></th><th scope="col"></th></tr>
+                <tr><th scope="col">Project</th><th scope="col">Role</th><th scope="col">Tools</th><th scope="col">Link</th></tr>
               </thead>
               <tbody>
-                <tr><th scope="row"></th><td></td><td></td><td><a href="https://socalfurs.com" target="_blank" rel="noopener"></a></td></tr>
-                <tr><th scope="row"></th><td></td><td></td><td><a href="https://localfurry.com" target="_blank" rel="noopener"></a></td></tr>
+                <tr><th scope="row">SoCalFurs</th><td>Full stack developer</td><td>Telethon, Gemini, PostgreSQL, React</td><td><a href="https://socalfurs.com" target="_blank" rel="noopener">Visit</a></td></tr>
+                <tr><th scope="row">LocalFurry</th><td>Works under the lead developer</td><td>Python, Telegram</td><td><a href="https://localfurry.com" target="_blank" rel="noopener">Visit</a></td></tr>
               </tbody>
             </table>
           </div>
@@ -119,9 +119,9 @@
 
     <section class="cta" aria-labelledby="cta-title">
       <div class="wrap grid12">
-        <h2 id="cta-title"><em></em></h2>
+        <h2 id="cta-title">Like what <em>you see?</em></h2>
         <div class="cta-side">
-          <p></p>
+          <p>I’d love to hear about your team or project.</p>
           <a class="btn" href="contact.html"><span class="material-symbols-outlined" aria-hidden="true">mail</span>Get in touch</a>
         </div>
       </div>
@@ -131,26 +131,26 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="grid12">
-        <p class="footer-name"></p>
-        <nav class="footer-col" aria-label="">
-          <h2></h2>
+        <p class="footer-name">Sean Heng</p>
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Pages</h2>
           <ul>
-            <li><a href="index.html"></a></li>
-            <li><a href="projects.html"></a></li>
-            <li><a href="resume.html"></a></li>
-            <li><a href="contact.html"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="footer-col">
-          <h2></h2>
+          <h2>Elsewhere</h2>
           <ul>
-            <li><a href="mailto:hengsean45@gmail.com"></a></li>
+            <li><a href="mailto:hengsean45@gmail.com">hengsean45@gmail.com</a></li>
             <li><a href="https://socalfurs.com" target="_blank" rel="noopener">SoCalFurs <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
             <li><a href="https://localfurry.com" target="_blank" rel="noopener">LocalFurry <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-bottom"></p>
+      <p class="footer-bottom">© 2026 Sean Heng · Built with HTML &amp; CSS</p>
     </div>
   </footer>
 </body>
