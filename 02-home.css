@@ -1,0 +1,115 @@
+/* ==========================================================
+   Chunk 2 of 5 · Home page
+   Append to styles.css in order (01 → 05).
+   ========================================================== */
+
+/* Hero: the photo IS the first screen, then dissolves into the page ---- */
+.hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  height: clamp(640px, 100svh, 1020px);
+  display: flex; align-items: flex-end;
+}
+
+.hero-photo {
+  position: absolute; inset: 0; z-index: -2;
+  width: 100%; height: 100%; object-fit: cover; object-position: 30% 38%;
+}
+
+/* Gradient 1: dark top for the nav, long fade at the bottom into --night */
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(17, 5, 2, 0.7) 0%, rgba(17, 5, 2, 0) 24%),
+    linear-gradient(to bottom, rgba(17, 5, 2, 0) 42%, rgba(17, 5, 2, 0.72) 74%, #110502 100%);
+}
+
+.hero-grid { width: min(var(--wrap), 100% - 48px); margin-inline: auto; padding-bottom: 56px; align-items: end; }
+
+.hero-copy { grid-column: 6 / 13; }
+
+.hero-lead { max-width: 440px; font-size: 20px; line-height: 32px; color: var(--cream); margin: 28px 0 0; }
+
+.scroll-cue {
+  grid-column: 1 / 4; grid-row: 1; align-self: end;
+  font: 500 12px/18px var(--mono); letter-spacing: 1.8px; text-transform: uppercase;
+  text-decoration: none; color: var(--cream-soft);
+}
+
+.scroll-cue:hover { color: var(--lantern); }
+
+/* Pull quote --------------------------------------------------- */
+.quote { padding: 112px 0 24px; scroll-margin-top: 0; }
+
+.quote-lead { grid-column: 3 / 12; margin: 0; }
+
+.quote blockquote { margin: 0; }
+
+.quote p { font: italic 400 44px/52px var(--serif); letter-spacing: -0.6px; color: var(--cream); margin: 0 0 28px; }
+
+.quote figcaption { font: 500 12px/18px var(--mono); letter-spacing: 1.8px; text-transform: uppercase; color: var(--cream-soft); }
+
+.quote cite { font-style: normal; }
+
+/* Supporting quotes: two staggered columns, no boxes */
+.quote-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px 96px; margin: 112px 0 0; padding-left: 16.66%; }
+
+.quote-grid figure { margin: 0; }
+
+.quote-grid figure:nth-child(even) { margin-top: 56px; }
+
+.quote-grid p { font-size: 30px; line-height: 38px; letter-spacing: -0.4px; margin-bottom: 20px; }
+
+/* Work entries (home + projects) -------------------------------- */
+.work-head { margin-bottom: 24px; }
+
+.work-head .label { grid-column: 1 / 4; margin: 14px 0 0; }
+
+.work-head h2 { grid-column: 4 / 11; }
+
+/* About ---------------------------------------------------------- */
+.about-facts { grid-column: 1 / 5; align-self: start; }
+
+.about-facts dl { margin: 0; display: grid; gap: 28px; }
+
+.about-facts dt { font: 500 12px/18px var(--mono); letter-spacing: 1.8px; text-transform: uppercase; color: var(--glow); margin-bottom: 4px; }
+
+.about-facts dd { margin: 0; color: var(--cream-soft); }
+
+.about-body { grid-column: 6 / 13; }
+
+.about-body .lede { font: 400 32px/40px var(--serif); letter-spacing: -0.4px; color: var(--cream); margin-bottom: 32px; }
+
+@media (max-width: 1024px) {
+  .hero-copy { grid-column: 5 / 13; }
+  .quote p { font-size: 38px; line-height: 46px; }
+  .quote-grid { gap: 64px 48px; padding-left: 8%; }
+  .quote-grid p { font-size: 28px; line-height: 36px; }
+}
+
+@media (max-width: 820px) {
+  .hero { height: clamp(620px, 100svh, 900px); }
+  .hero-photo { object-position: 28% 30%; }
+  .hero::after {
+    background:
+      linear-gradient(to bottom, rgba(17, 5, 2, 0.7) 0%, rgba(17, 5, 2, 0) 22%),
+      linear-gradient(to bottom, rgba(17, 5, 2, 0) 30%, rgba(17, 5, 2, 0.78) 62%, #110502 92%);
+  }
+  .hero-grid { padding-bottom: 40px; }
+  .hero-copy { grid-column: 1 / 13; }
+  .scroll-cue { display: none; }
+  .quote { padding: 72px 0 24px; }
+  .quote-lead { grid-column: 1 / 13; }
+  .quote p { font-size: 32px; line-height: 40px; }
+  .quote-grid { grid-template-columns: 1fr; padding-left: 0; gap: 56px; margin-top: 72px; }
+  .quote-grid figure:nth-child(even) { margin-top: 0; }
+  .quote-grid p { font-size: 26px; line-height: 34px; }
+  .work-head .label, .work-head h2, .about-facts, .about-body { grid-column: 1 / 13; grid-row: auto; }
+  .work-head .label { margin-bottom: 16px; }
+  .about-facts { margin-bottom: 48px; }
+  .about-body .lede { font-size: 28px; line-height: 36px; }
+}
+
+@media (max-width: 560px) {
+  .hero-lead { font-size: 18px; line-height: 28px; }
+}
+
