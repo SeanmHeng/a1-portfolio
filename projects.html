@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0">
-  <link rel="stylesheet" href="01-base.css">
-  <link rel="stylesheet" href="03-projects.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -101,15 +100,15 @@
           <h2 id="glance-title">At a <em>glance</em></h2>
         </div>
         <div class="services-list">
-          <div class="table-scroll table-scroll--flush">
+          <div class="table-scroll table-scroll--flush" tabindex="0" role="region" aria-labelledby="glance-caption">
             <table>
-              <caption>Summary of my two featured websites</caption>
+              <caption id="glance-caption">Summary of my two featured websites</caption>
               <thead>
-                <tr><th scope="col">Project</th><th scope="col">Role</th><th scope="col">Tools</th><th scope="col">Link</th></tr>
+                <tr><th scope="col" id="glance-project">Project</th><th scope="col" id="glance-role">Role</th><th scope="col" id="glance-tools">Tools</th><th scope="col" id="glance-link">Link</th></tr>
               </thead>
               <tbody>
-                <tr><th scope="row">SoCalFurs</th><td>Full stack developer</td><td>Telethon, Gemini, PostgreSQL, React</td><td><a href="https://socalfurs.com" target="_blank" rel="noopener">Visit</a></td></tr>
-                <tr><th scope="row">LocalFurry</th><td>Works under the lead developer</td><td>Python, Telegram</td><td><a href="https://localfurry.com" target="_blank" rel="noopener">Visit</a></td></tr>
+                <tr><th scope="row" id="glance-socalfurs" headers="glance-project">SoCalFurs</th><td headers="glance-role glance-socalfurs">Full stack developer</td><td headers="glance-tools glance-socalfurs">Telethon, Gemini, PostgreSQL, React</td><td headers="glance-link glance-socalfurs"><a href="https://socalfurs.com" target="_blank" rel="noopener">Visit</a></td></tr>
+                <tr><th scope="row" id="glance-localfurry" headers="glance-project">LocalFurry</th><td headers="glance-role glance-localfurry">Works under the lead developer</td><td headers="glance-tools glance-localfurry">Python, Telegram</td><td headers="glance-link glance-localfurry"><a href="https://localfurry.com" target="_blank" rel="noopener">Visit</a></td></tr>
               </tbody>
             </table>
           </div>
