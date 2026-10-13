@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <meta name="description" content="">
+  <title>Résumé | Sean Heng</title>
+  <meta name="description" content="Education, experience and skills of Sean Heng, UC Irvine computer science student.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="04-resume.css">
 </head>
 <body>
-  <a class="skip-link" href="#main"></a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap nav-wrap">
-      <a class="brand" href="index.html"></a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="">
+      <a class="brand" href="index.html">Sean Heng</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
       <label for="nav-toggle" class="nav-btn"><span class="material-symbols-outlined" aria-hidden="true">menu</span></label>
-      <nav class="site-nav" aria-label="">
+      <nav class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html"></a></li>
-          <li><a href="projects.html"></a></li>
-          <li><a href="resume.html" aria-current="page"></a></li>
-          <li><a href="contact.html"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html" aria-current="page">Résumé</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,94 +33,98 @@
 
   <main id="main">
 
+    <!-- NAME HEADER -->
     <section class="cv-head wrap" aria-labelledby="page-title">
-      <h1 id="page-title"></h1>
-      <p class="cv-title"></p>
+      <h1 id="page-title">Sean Heng</h1>
+      <p class="cv-title">Full Stack Developer</p>
       <a class="arrow-link" href="resume.pdf" download>Download PDF <span class="material-symbols-outlined" aria-hidden="true">download</span></a>
     </section>
 
-    <section class="cv-top wrap grid12" aria-label="">
+    <!-- CONTACT + SUMMARY -->
+    <section class="cv-top wrap grid12" aria-label="Contact and summary">
       <aside class="cv-contact" aria-labelledby="contact-title">
-        <h2 class="cv-h" id="contact-title"></h2>
+        <h2 class="cv-h" id="contact-title">Contact</h2>
         <ul class="contact-list">
-          <li><span class="material-symbols-outlined" aria-hidden="true">mail</span><a href="mailto:hengsean45@gmail.com"></a></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">mail</span><a href="mailto:hengsean45@gmail.com">hengsean45@gmail.com</a></li>
           <li><span class="material-symbols-outlined" aria-hidden="true">location_on</span>California</li>
-          <li><span class="material-symbols-outlined" aria-hidden="true">link</span><a href="https://socalfurs.com" target="_blank" rel="noopener"></a></li>
-          <li><span class="material-symbols-outlined" aria-hidden="true">link</span><a href="https://localfurry.com" target="_blank" rel="noopener"></a></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">link</span><a href="https://socalfurs.com" target="_blank" rel="noopener">socalfurs.com</a></li>
+          <li><span class="material-symbols-outlined" aria-hidden="true">link</span><a href="https://localfurry.com" target="_blank" rel="noopener">localfurry.com</a></li>
         </ul>
       </aside>
       <div class="cv-summary">
-        <h2 class="cv-h"></h2>
-        <p></p>
+        <h2 class="cv-h">Summary</h2>
+        <p>Computer science student at UC Irvine and full stack developer on a production event-calendar platform used by 3,000+ people daily. I build event-driven backends, data pipelines and full-stack tools, and I’m currently working on a Python Telegram adapter and city-managing agents for LocalFurry.</p>
       </div>
     </section>
 
-    <section class="cv-cols wrap grid12" aria-label="">
+    <!-- EDUCATION + EXPERIENCE -->
+    <section class="cv-cols wrap grid12" aria-label="Education and experience">
       <div class="cv-edu">
-        <h2 class="cv-h"></h2>
+        <h2 class="cv-h">Education</h2>
         <article class="cv-job">
-          <h3></h3>
-          <p class="meta"></p>
-          <p></p>
+          <h3>B.S., Computer Science</h3>
+          <p class="meta">Sep 2024 – Jun 2028</p>
+          <p>University of California, Irvine</p>
         </article>
       </div>
 
       <div class="cv-exp">
-        <h2 class="cv-h"></h2>
+        <h2 class="cv-h">Work experience</h2>
         <div class="cv-line">
           <article class="cv-job">
-            <h3></h3>
-            <p class="meta"></p>
-            <p></p>
+            <h3>Full Stack Developer</h3>
+            <p class="meta">socalfurs.com · Mar 2026 – Present</p>
+            <p>Worked directly under the lead developer on a production calendar automation platform used by 3,000+ people daily, integrating Telegram, AI, PostgreSQL and Google Calendar to automate community event publishing.</p>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Replaced polling-based Telegram checks with an event-driven Telethon workflow, improving responsiveness and reducing unnecessary processing.</li>
+              <li>Optimized Google Calendar API duplicate-event detection by restricting queries to relevant date ranges, reducing unnecessary comparisons and avoiding API pagination limits.</li>
+              <li>Built an ETL-style data pipeline using the Gemini API to transform unstructured Telegram announcements into validated JSON and load structured event data into PostgreSQL.</li>
+              <li>Improved backend maintainability by refactoring class architecture, correcting constructor logic and removing redundant processing.</li>
+              <li>Developed a full-stack event management interface using React, TypeScript, Node.js, PostgreSQL and Drizzle, so organizers can create, view and manage structured event data.</li>
             </ul>
           </article>
 
           <article class="cv-job">
-            <h3></h3>
-            <p class="meta"></p>
+            <h3>Barista</h3>
+            <p class="meta">Krak Boba · Anaheim, CA · Jul 2026 – Present</p>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Prepared beverages and daily ingredients while maintaining product consistency and food-safety standards.</li>
+              <li>Delivered customer service in a fast-paced environment: taking orders, handling transactions and addressing customer needs.</li>
+              <li>Tracked and restocked inventory, flagging low-stock items to prevent operational delays.</li>
             </ul>
           </article>
 
           <article class="cv-job">
-            <h3></h3>
-            <p class="meta"></p>
+            <h3>Face Overlay Tracker</h3>
+            <p class="meta">Personal project · Computer vision</p>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Built a real-time face-tracking application that detects facial landmarks and anchors a PNG overlay to the user’s face.</li>
+              <li>Implemented landmark-based positioning and scaling so the overlay stays aligned through head movement and changing lighting.</li>
+              <li>Developed expression-based logic that reads landmark geometry and switches overlays based on detected emotions.</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS (kept at the bottom) -->
     <section class="cv-skills wrap" aria-labelledby="skills-title">
-      <h2 class="cv-h" id="skills-title"></h2>
+      <h2 class="cv-h" id="skills-title">Skills</h2>
       <div class="table-scroll" style="margin-top:0">
         <table>
-          <caption></caption>
+          <caption>Technical skills and where I have used them</caption>
           <thead>
-            <tr><th scope="col"></th><th scope="col"></th><th scope="col"></th></tr>
+            <tr><th scope="col">Skill</th><th scope="col">Category</th><th scope="col">Details</th></tr>
           </thead>
           <tbody>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
-            <tr><th scope="row"></th><td></td><td></td></tr>
+            <tr><th scope="row">Python, C++ &amp; Java</th><td>Languages</td><td>Python for the Telethon workflow at SoCalFurs and the Telegram adapter at LocalFurry</td></tr>
+            <tr><th scope="row">TypeScript &amp; JavaScript</th><td>Languages</td><td>SoCalFurs event management interface</td></tr>
+            <tr><th scope="row">React &amp; Node.js</th><td>Frameworks</td><td>Full-stack organizer tools</td></tr>
+            <tr><th scope="row">PostgreSQL, SQLite &amp; Drizzle</th><td>Databases</td><td>Structured event data</td></tr>
+            <tr><th scope="row">AWS</th><td>Cloud</td><td>Lambda, S3, API Gateway, Cognito, EventBridge, RDS</td></tr>
+            <tr><th scope="row">Docker, Git &amp; GitHub Actions</th><td>Tooling</td><td>CI/CD and version control</td></tr>
+            <tr><th scope="row">Data pipelines (ETL)</th><td>Concept</td><td>Gemini API to validated JSON to PostgreSQL</td></tr>
+            <tr><th scope="row">Event-driven architecture</th><td>Concept</td><td>Telethon replacing polling</td></tr>
           </tbody>
         </table>
       </div>
@@ -130,26 +134,26 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="grid12">
-        <p class="footer-name"></p>
-        <nav class="footer-col" aria-label="">
-          <h2></h2>
+        <p class="footer-name">Sean Heng</p>
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Pages</h2>
           <ul>
-            <li><a href="index.html"></a></li>
-            <li><a href="projects.html"></a></li>
-            <li><a href="resume.html"></a></li>
-            <li><a href="contact.html"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="footer-col">
-          <h2></h2>
+          <h2>Elsewhere</h2>
           <ul>
-            <li><a href="mailto:hengsean45@gmail.com"></a></li>
+            <li><a href="mailto:hengsean45@gmail.com">hengsean45@gmail.com</a></li>
             <li><a href="https://socalfurs.com" target="_blank" rel="noopener">SoCalFurs <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
             <li><a href="https://localfurry.com" target="_blank" rel="noopener">LocalFurry <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-bottom"></p>
+      <p class="footer-bottom">© 2026 Sean Heng · Built with HTML &amp; CSS</p>
     </div>
   </footer>
 </body>
