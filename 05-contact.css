@@ -1,0 +1,43 @@
+/* ==========================================================
+   Chunk 5 of 5 · Contact page
+   Append to styles.css in order (01 → 05).
+   ========================================================== */
+
+/* Contact --------------------------------------------------------------- */
+.contact-form { grid-column: 1 / 8; display: grid; gap: 28px; }
+
+.contact-side { grid-column: 9 / 13; }
+
+.contact-side h2 { font-size: 28px; line-height: 32px; letter-spacing: -0.3px; margin-bottom: 16px; }
+
+.contact-side ul { margin-bottom: 48px; }
+
+.contact-side li { color: var(--cream-soft); margin-bottom: 10px; }
+
+.field { display: grid; gap: 10px; }
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+label { font: 500 12px/18px var(--mono); letter-spacing: 1.8px; text-transform: uppercase; color: var(--cream); }
+
+input, select, textarea {
+  width: 100%; min-height: 52px; padding: 14px 16px;
+  font: 400 17px/24px var(--sans); letter-spacing: 0.1px; color: var(--cream);
+  background: var(--umber); border: 0; border-radius: 0;
+}
+
+input::placeholder, textarea::placeholder { color: #AD967A; }
+
+textarea { min-height: 200px; resize: vertical; }
+
+.form-note { margin: 0; font-size: 15px; line-height: 24px; }
+
+@media (max-width: 820px) {
+  .contact-form, .contact-side { grid-column: 1 / 13; grid-row: auto; }
+  .contact-side { margin-top: 72px; }
+}
+
+@media (max-width: 560px) {
+  .field-row { grid-template-columns: 1fr; }
+}
+
